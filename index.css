@@ -1,0 +1,67 @@
+.main{
+    display: flex;
+     border: 1px solid black;
+}
+.left{
+    height: 100vh;
+    width: 10%;
+    border: 5px solid black;
+   
+}
+
+.middle{
+    /* margin-top: 10px; */
+    
+    height: 80vh;
+    width: 80%;
+    /* display: flex; */
+    border: 5px solid black; 
+    overflow: scroll;
+}
+.top{
+    height: 10%;
+    width: 78%;
+    border: 2px solid red;
+    position: fixed;
+}
+.down{
+    margin-top: 8.5%;
+    height: 20px;
+    width: 78%;
+    display: flex;
+    /* border: 2px solid black; */
+    /* border: 2px solid yellow; */
+    position: fixed;
+}
+.down1{
+    height: 60px;
+    width: 50%;
+    border: 2px solid aqua;
+}
+.down2{
+    height: 60px;
+    width: 50%;
+    border: 2px solid aqua;
+}
+.middle1{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}
+.sender{
+    align-self: start;
+}
+.reciver{
+    align-self: end;
+}
+.Right{
+    height: 100vh;
+    width: 10%;
+    border: 5px solid black; 
+}
+#userinput{
+height: 50px;
+width: 400px;
+}

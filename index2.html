@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    
+<div class="navside">
+    <div class="flex h-screen bg-gray-100">
+
+        <!-- sidebar -->
+        <div class="hidden md:flex flex-col w-64  ">
+    
+            <div class="flex flex-col flex-1 overflow-y-auto">
+                <nav
+                    class="flex flex-col flex-1 overflow-y-auto bg-gradient-to-b from-gray-700 to-blue-500 px-2 py-4 gap-10 rounded-2xl sidebar">
+                    <div>
+                        <a href="#" class="flex items-center px-4 py-2  hover:bg-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            Dashboard
+                        </a>
+                    </div>
+                    <div class="flex flex-col flex-1 gap-3">
+                        <a href="#"
+                            class="flex items-center px-4 py-2 mt-2 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="margin-right: 8px">
+                                <path fill="currentColor" fill-rule="evenodd"
+                                    d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6l2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                            Home
+                        </a>
+                        <a href="Profilepage.html"
+                        target="_blank"
+                            class="flex items-center px-4 py-2 mt-2  hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"
+                                style="margin-right: 8px">
+                                <path fill="currentColor"
+                                    d="M12 4a5 5 0 1 1-5 5a5 5 0 0 1 5-5m0-2a7 7 0 1 0 7 7a7 7 0 0 0-7-7m10 28h-2v-5a5 5 0 0 0-5-5H9a5 5 0 0 0-5 5v5H2v-5a7 7 0 0 1 7-7h6a7 7 0 0 1 7 7zm0-26h10v2H22zm0 5h10v2H22zm0 5h7v2h-7z" />
+                            </svg>
+                            Profile
+                        </a>
+                        <a href="Articlepage.html"
+                        target="_blank"
+                            class="flex items-center px-4 py-2 mt-2  hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="margin-right: 8px">
+                                <path fill="none" stroke="currentColor" stroke-width="2"
+                                    d="M16 7h3v4h-3zm-7 8h11M9 11h4M9 7h4M6 18.5a2.5 2.5 0 1 1-5 0V7h5.025M6 18.5V3h17v15.5a2.5 2.5 0 0 1-2.5 2.5h-17" />
+                            </svg>
+                            Article
+                        </a>
+                        <a href="userpage.html"
+                        target="_blank"
+                            class="flex items-center px-4 py-2 mt-2  hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"
+                                style="margin-right: 8px">
+                                <path fill="currentColor"
+                                    d="M21.053 20.8c-1.132-.453-1.584-1.698-1.584-1.698s-.51.282-.51-.51s.51.51 1.02-2.548c0 0 1.413-.397 1.13-3.68h-.34s.85-3.51 0-4.7c-.85-1.188-1.188-1.98-3.057-2.547s-1.188-.454-2.547-.396c-1.36.058-2.492.793-2.492 1.19c0 0-.85.056-1.188.396c-.34.34-.906 1.924-.906 2.32s.283 3.06.566 3.625l-.337.114c-.284 3.283 1.13 3.68 1.13 3.68c.51 3.058 1.02 1.756 1.02 2.548s-.51.51-.51.51s-.452 1.245-1.584 1.698c-1.132.452-7.416 2.886-7.927 3.396c-.512.51-.454 2.888-.454 2.888H29.43s.06-2.377-.452-2.888c-.51-.51-6.795-2.944-7.927-3.396zm-12.47-.172c-.1-.18-.148-.31-.148-.31s-.432.24-.432-.432s.432.432.864-2.16c0 0 1.2-.335.96-3.118h-.29s.144-.59.238-1.334a10.01 10.01 0 0 1 .037-.996l.038-.426c-.02-.492-.107-.94-.312-1.226c-.72-1.007-1.008-1.68-2.59-2.16c-1.584-.48-1.01-.384-2.16-.335c-1.152.05-2.112.672-2.112 1.01c0 0-.72.047-1.008.335c-.27.27-.705 1.462-.757 1.885v.28c.048.654.26 2.45.47 2.873l-.286.096c-.24 2.782.96 3.118.96 3.118c.43 2.59.863 1.488.863 2.16s-.432.43-.432.43s-.383 1.058-1.343 1.44l-.232.092v5.234h.575c-.03-1.278.077-2.927.746-3.594c.357-.355 1.524-.94 6.353-2.862zm22.33-9.056c-.04-.378-.127-.715-.292-.946c-.718-1.008-1.007-1.68-2.59-2.16c-1.583-.48-1.007-.384-2.16-.335c-1.15.05-2.11.672-2.11 1.01c0 0-.72.047-1.008.335c-.27.272-.71 1.472-.758 1.89h.033l.08.914c.02.23.022.435.027.644c.09.666.21 1.35.33 1.59l-.286.095c-.24 2.782.96 3.118.96 3.118c.432 2.59.863 1.488.863 2.16s-.43.43-.43.43s-.054.143-.164.34c4.77 1.9 5.927 2.48 6.28 2.833c.67.668.774 2.316.745 3.595h.48V21.78l-.05-.022c-.96-.383-1.344-1.44-1.344-1.44s-.433.24-.433-.43s.433.43.864-2.16c0 0 .804-.23.963-1.84V14.66c0-.018 0-.033-.003-.05h-.29s.216-.89.293-1.862z" />
+                            </svg>
+    
+                            Users
+                        </a>
+                        <a href="Commentspage.html"
+                        target="_blank"
+                            class="flex items-center px-4 py-2 mt-2  hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="margin-right: 8px">
+                                <path fill="currentColor"
+                                    d="M12 2A10 10 0 0 0 2 12a9.89 9.89 0 0 0 2.26 6.33l-2 2a1 1 0 0 0-.21 1.09A1 1 0 0 0 3 22h9a10 10 0 0 0 0-20m0 18H5.41l.93-.93a1 1 0 0 0 0-1.41A8 8 0 1 1 12 20m5-9H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2m-2 4H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2M9 9h6a1 1 0 0 0 0-2H9a1 1 0 0 0 0 2" />
+                            </svg>
+                            comments
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    
+        <!-- Main content -->
+        <div class="flex flex-col flex-1 overflow-y-auto ">
+            <div class="flex items-center justify-between h-16 bg-white border-b border-gray-200 bg-gradient-to-b from-gray-700 to-blue-500   navbarcnt">
+                <div class="flex items-center px-4 ">
+    
+                    <div class="relative mx-auto text-gray-600  ">
+                        <input class="border border-gray-600 h-10 w-96 px-5 pr-16 rounded-lg text-sm placeholder-current focus:outline-none dark:bg-gray-500 dark:border-gray-50 dark:text-gray-200"
+                                   type="search" name="search" placeholder="Search" id="searchcnt">
+                        <button type="submit" class="absolute right-1 top-0 mt-3 mr-4">
+                                <svg class="text-gray-600 dark:text-gray-200 h-4 w-4 fill-current"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                     viewBox="0 0 56.966 56.966" xml:space="preserve" width="512px" height="512px">
+                                    <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23 
+                                     s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92 
+                                     c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17 
+                                     s-17-7.626-17-17S14.61,6,23.984,6z"/>
+                                </svg>
+                            </button>
+                    </div>
+                </div>
+                <!-- notification -->
+                <div class="flex items-center space-x-4 mr-4">
+                    <a href="#" class="text-gray-600 hover:text-gray-800 dark:text-gray-200 dark:hover:text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M6.429 2.413a.75.75 0 0 0-1.13-.986l-1.292 1.48a4.75 4.75 0 0 0-1.17 3.024L2.78 8.65a.75.75 0 1 0 1.5.031l.056-2.718a3.25 3.25 0 0 1 .801-2.069z" />
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M6.237 7.7a4.214 4.214 0 0 1 4.206-3.95H11V3a1 1 0 1 1 2 0v.75h.557a4.214 4.214 0 0 1 4.206 3.95l.221 3.534a7.376 7.376 0 0 0 1.308 3.754a1.617 1.617 0 0 1-1.135 2.529l-3.407.408V19a2.75 2.75 0 1 1-5.5 0v-1.075l-3.407-.409a1.617 1.617 0 0 1-1.135-2.528a7.377 7.377 0 0 0 1.308-3.754zm4.206-2.45a2.714 2.714 0 0 0-2.709 2.544l-.22 3.534a8.877 8.877 0 0 1-1.574 4.516a.117.117 0 0 0 .082.183l3.737.449c1.489.178 2.993.178 4.482 0l3.737-.449a.117.117 0 0 0 .082-.183a8.876 8.876 0 0 1-1.573-4.516l-.221-3.534a2.714 2.714 0 0 0-2.709-2.544zm1.557 15c-.69 0-1.25-.56-1.25-1.25v-.75h2.5V19c0 .69-.56 1.25-1.25 1.25"
+                                clip-rule="evenodd" />
+                            <path fill="currentColor"
+                                d="M17.643 1.355a.75.75 0 0 0-.072 1.058l1.292 1.48a3.25 3.25 0 0 1 .8 2.07l.057 2.717a.75.75 0 0 0 1.5-.031l-.057-2.718a4.75 4.75 0 0 0-1.17-3.024l-1.292-1.48a.75.75 0 0 0-1.058-.072" />
+                        </svg>
+                    </a>
+                    <!-- parametre -->
+                    <a href="#" class="text-gray-600 hover:text-gray-800 dark:text-gray-200 dark:hover:text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19.9 12.66a1 1 0 0 1 0-1.32l1.28-1.44a1 1 0 0 0 .12-1.17l-2-3.46a1 1 0 0 0-1.07-.48l-1.88.38a1 1 0 0 1-1.15-.66l-.61-1.83a1 1 0 0 0-.95-.68h-4a1 1 0 0 0-1 .68l-.56 1.83a1 1 0 0 1-1.15.66L5 4.79a1 1 0 0 0-1 .48L2 8.73a1 1 0 0 0 .1 1.17l1.27 1.44a1 1 0 0 1 0 1.32L2.1 14.1a1 1 0 0 0-.1 1.17l2 3.46a1 1 0 0 0 1.07.48l1.88-.38a1 1 0 0 1 1.15.66l.61 1.83a1 1 0 0 0 1 .68h4a1 1 0 0 0 .95-.68l.61-1.83a1 1 0 0 1 1.15-.66l1.88.38a1 1 0 0 0 1.07-.48l2-3.46a1 1 0 0 0-.12-1.17ZM18.41 14l.8.9l-1.28 2.22l-1.18-.24a3 3 0 0 0-3.45 2L12.92 20h-2.56L10 18.86a3 3 0 0 0-3.45-2l-1.18.24l-1.3-2.21l.8-.9a3 3 0 0 0 0-4l-.8-.9l1.28-2.2l1.18.24a3 3 0 0 0 3.45-2L10.36 4h2.56l.38 1.14a3 3 0 0 0 3.45 2l1.18-.24l1.28 2.22l-.8.9a3 3 0 0 0 0 3.98m-6.77-6a4 4 0 1 0 4 4a4 4 0 0 0-4-4m0 6a2 2 0 1 1 2-2a2 2 0 0 1-2 2" />
+                        </svg>
+                    </a>
+                    <!-- logout -->
+                    <a href="signupage.html"
+                        class="flex items-center text-gray-600 hover:text-gray-800 dark:text-gray-200 dark:hover:text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M5 11h8v2H5v3l-5-4l5-4zm-1 7h2.708a8 8 0 1 0 0-12H4a9.985 9.985 0 0 1 8-4c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.985 9.985 0 0 1-8-4" />
+                        </svg>
+                        <span class="font-bold log">Login here</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="p-4 mcard ">
+<!--                
+                <h1 class="text-2xl font-bold">Welcome to my dashboard!</h1>
+                <p class="mt-2 text-gray-600">This is an example dashboard using Tailwind CSS.</p> -->
+                <div id="cnt">
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+
+  <!-- footer start -->
+  <div class="bg-gray-100 foot">
+    <div class="max-w-screen-xl py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
+        <div class="p-5 sm:w-4/12">
+            <h3 class="font-bold text-xl text-indigo-600 mb-4">Userinterface Dashboard</h3>
+            <p class="text-gray-500 text-sm mb-5">Full-stack developer crafting seamless web experiences. Passionate about clean code, scalable systems, and turning ideas into reality with React, Node.js, and TypeScript. Let's build the future, one line at a time.</p>
+            <div class="flex-row flex">
+                <a href="/#" class="w-6 mx-1">
+                    <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%"
+                        height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                        xmlns:serif="http://www.serif.com/"
+                        style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                  5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
+                  -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
+                  0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
+                  -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
+                  0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
+                  -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
+                  0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
+                  -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
+                  -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
+                  1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
+                  -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
+                  6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
+                  0.771,-0.67 1.054,-1.093Z"></path>
+                    </svg>
+                </a>
+                <a href="/#" class="w-6 mx-1">
+                    <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%"
+                        height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                        xmlns:serif="http://www.serif.com/"
+                        style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                  5.373,-12 12,-12c6.627,0 12,5.373
+                  12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
+                  0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
+                  -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
+                    </svg>
+                </a>
+                <a href="/#" class="w-6 mx-1">
+                    <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%"
+                        height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                        xmlns:serif="http://www.serif.com/"
+                        style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <g id="Layer_1">
+                            <circle id="Oval" cx="12" cy="12" r="12"></circle>
+                            <path id="Shape" d="M19.05,8.362c0,-0.062 0,-0.125 -0.063,-0.187l0,-0.063c-0.187,-0.562
+                     -0.687,-0.937 -1.312,-0.937l0.125,0c0,0 -2.438,-0.375 -5.75,-0.375c-3.25,0
+                     -5.75,0.375 -5.75,0.375l0.125,0c-0.625,0 -1.125,0.375
+                     -1.313,0.937l0,0.063c0,0.062 0,0.125 -0.062,0.187c-0.063,0.625 -0.25,1.938
+                     -0.25,3.438c0,1.5 0.187,2.812 0.25,3.437c0,0.063 0,0.125
+                     0.062,0.188l0,0.062c0.188,0.563 0.688,0.938 1.313,0.938l-0.125,0c0,0
+                     2.437,0.375 5.75,0.375c3.25,0 5.75,-0.375 5.75,-0.375l-0.125,0c0.625,0
+                     1.125,-0.375 1.312,-0.938l0,-0.062c0,-0.063 0,-0.125
+                     0.063,-0.188c0.062,-0.625 0.25,-1.937 0.25,-3.437c0,-1.5 -0.125,-2.813
+                     -0.25,-3.438Zm-4.634,3.927l-3.201,2.315c-0.068,0.068 -0.137,0.068
+                     -0.205,0.068c-0.068,0 -0.136,0 -0.204,-0.068c-0.136,-0.068 -0.204,-0.204
+                     -0.204,-0.34l0,-4.631c0,-0.136 0.068,-0.273 0.204,-0.341c0.136,-0.068
+                     0.272,-0.068 0.409,0l3.201,2.316c0.068,0.068 0.136,0.204
+                     0.136,0.34c0.068,0.136 0,0.273 -0.136,0.341Z" style="fill: rgb(255, 255, 255);"></path>
+                        </g>
+                    </svg>
+                </a>
+                <a href="/#" class="w-6 mx-1">
+                    <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%"
+                        height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                        xmlns:serif="http://www.serif.com/"
+                        style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
+                  3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
+                  -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
+                  -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
+                  -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
+                  0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
+                  3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
+                  -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
+                  -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
+                  1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
+                  -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
+                  -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
+                  0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
+                  0.4,1.5l0,4.5l2.9,0Z"></path>
+                    </svg>
+                </a>
+                <a href="/#" class="w-6 mx-1">
+                    <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%"
+                        height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                        xmlns:serif="http://www.serif.com/"
+                        style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Combined-Shape" d="M12,24c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12c-6.627,0
+                  -12,5.373 -12,12c0,6.627 5.373,12 12,12Zm6.591,-15.556l-0.722,0c-0.189,0
+                  -0.681,0.208 -0.681,0.385l0,6.422c0,0.178 0.492,0.323
+                  0.681,0.323l0.722,0l0,1.426l-4.675,0l0,-1.426l0.935,0l0,-6.655l-0.163,0l-2.251,8.081l-1.742,0l-2.222,-8.081l-0.168,0l0,6.655l0.935,0l0,1.426l-3.74,0l0,-1.426l0.519,0c0.203,0
+                  0.416,-0.145 0.416,-0.323l0,-6.422c0,-0.177 -0.213,-0.385
+                  -0.416,-0.385l-0.519,0l0,-1.426l4.847,0l1.583,5.704l0.042,0l1.598,-5.704l5.021,0l0,1.426Z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="p-5 sm:w-5/12 flex flex-col">
+            <div class="text-sm uppercase text-indigo-600 font-bold mb-5">Recent Blogs</div>
+            <div class="flex mb-3">
+                <div class="h-20 w-3/12 bg-cover"
+                    style="background-image: url('https://tailwindcss.com/img/card-left.jpg')"
+                    title="Woman holding a mug">
+                </div>
+                <div class="pl-3 w-9/12">
+                    <div class="font-bold text-sm">The Coldest Blog 1</div>
+                    <p class="text-gray-700 text-sm">
+                      I paint what I feel, photograph what I see, and create what I imagine. Life’s a canvas, and I’m just adding colors. 🎨✨
+                    </p>
+                </div>
+            </div>
+            <div class="flex mb-3">
+                <div class="h-20 w-3/12 bg-cover"
+                    style="background-image: url('https://tailwindcss.com/img/card-left.jpg')"
+                    title="Woman holding a mug">
+                </div>
+                <div class="pl-3 w-9/12">
+                    <div class="font-bold text-sm">The Coldest Blog 2</div>
+                    <p class="text-gray-700 text-sm">
+                      Sweat. Strength. Repeat. 💪 Sharing my journey, workouts, and daily hustle. Let’s grow stronger together.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="p-5 sm:w-3/12">
+            <div class="text-sm uppercase text-indigo-600 font-bold mb-5">Instagram</div>
+            <ul class="grid grid-cols-2 gap-5">
+                <li>
+                    <img src="https://images.pexels.com/photos/174938/pexels-photo-174938.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" class="w-100">
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/174938/pexels-photo-174938.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" class="w-100">
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/174938/pexels-photo-174938.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" class="w-100">
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/174938/pexels-photo-174938.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" class="w-100">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
+        <p>© Copyright 2023. All Rights Reserved.</p>
+    </div>
+  </div>
+  <!-- footer end -->
+
+
+ 
+
+    
+
+
+
+
+   
+    <script src="index2.js"></script>
+</body>
+</html>
